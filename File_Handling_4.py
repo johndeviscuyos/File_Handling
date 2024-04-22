@@ -19,13 +19,9 @@ def source_file(file_name):
 
         except ValueError:
             print("An Invalid Integer found in number.txt")
-
-
-
-
-source_file("Double.txt")
-#create a code that will Find the square of the even integers in the source file
 #store the output in double.txt
+source_file("Double.txt")
+
 
 #create a code that will create a file for the cube of the odd integers in double.txt
 #create a code that will find the cube of the integers
