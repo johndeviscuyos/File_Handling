@@ -9,7 +9,7 @@ def creating_file(file_name):
 #Ask user to enter a line of text
         while True:
             text_line=input("Enter line: ")
-            file.write(text_line + "\n")
+            file.write(text_line +"\n")
 
             text_speech.say(text_line)
             text_speech.runAndWait()
