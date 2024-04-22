@@ -2,10 +2,14 @@
 
 
 #Create a code that will open the txt file
-with open ("GWA.txt") as name_grades:
-    for line in name_grades:
-        line = line.strip()
-        print(line)
+# Read the file
+with open('GWA.txt', 'r') as gwa_file:
+    students = {}
+    for line in gwa_file:
+        name, gwa = line.strip().split(' - GWA: ')
+        students[name] = float(gwa)
+        print(name)
+        print(gwa)
 
 #Create a code that will seperate name and gwa
 
