@@ -1,3 +1,5 @@
+import pyttsx3
+text_speech = pyttsx3.init()
 
 #For square of the even integers
 #create a function
@@ -15,6 +17,8 @@ def source_file(file_name):
             with open("Double.txt", "w") as even:
                 for num in even_squared:
                     even.write(f"{num}\n")
+            speech_square = ('Even integers have been sorted out to the created file (Double.txt)')
+            text_speech.say (speech_square)
             print("Even integers have been sorted out to the created file (Double.txt)")
 
         except ValueError:
@@ -38,11 +42,15 @@ def source_file_2(file_name_2):
             with open("Triplet.txt", "w") as odd:
                 for num in odd_cube:
                     odd.write(f"{num}\n")
+
             print("Odd integers have been sorted out to the created file (Triplet.txt)")
+            speech_cube = ('Odd integers have been sorted out to the created file (Triplet.txt)')
+            text_speech.say(speech_cube)
+            text_speech.runAndWait()
 
         except ValueError:
             print("An Integer found in number.txt")
 
-
 source_file_2("Triple.txt")
 #store the output in triple.txt
+
