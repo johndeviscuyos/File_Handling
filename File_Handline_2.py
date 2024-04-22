@@ -14,3 +14,5 @@ with open('GWA.txt', 'r') as gwa_file:
 sorted_students = sorted(students.items(), key=lambda x: x[1], reverse=True)
 
 #Print the output
+for name, gwa in sorted_students:
+    print(f"{name} - GWA: {gwa}")
