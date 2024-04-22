@@ -20,3 +20,16 @@ with open("number.txt", "r") as numbers:
 
 #Create a code that will create a text file name odd.txt and will have the odd integers from number.txt
 
+with open("number.txt", "r") as numbers:
+    try:
+        integers = [int(line.strip()) for line in numbers]
+
+        odd_integers = [num for num in integers if num % 2 != 0]
+
+        with open("odd.txt", "w") as odd:
+            for num in odd_integers:
+                odd.write(f"{num}\n")
+        print("Odd integers have been sorted out to the created file")
+
+    except ValueError:
+        print("An Invalid Integer found in number.txt")
