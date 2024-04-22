@@ -23,3 +23,5 @@ for name, gwa in sorted_students:
     text_speech.say(f"{name} has a GWA of {gwa}")
     text_speech.runAndWait()
 
+
+
