@@ -23,6 +23,11 @@ def source_file(file_name):
 source_file("Double.txt")
 
 
-#create a code that will create a file for the cube of the odd integers in double.txt
+#create a code that will create a file for the cube of the odd integers in triple.txt
+def source_file_2(file_name_2):
+    with open("number.txt", "r") as file_2:
+
+
+source_file_2("Triple.txt")
 #create a code that will find the cube of the integers
 #store the output in triple.txt
