@@ -2,6 +2,10 @@
 
 
 #Create a code that will open the txt file
+with open ("GWA.txt") as name_grades:
+    for line in name_grades:
+        line = line.strip()
+        print(line)
 
 #Create a code that will seperate name and gwa
 
