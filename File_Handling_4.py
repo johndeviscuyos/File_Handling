@@ -2,8 +2,8 @@
 
 #create a function
 def source_file(file_name):
-
-source_file("Double.txt")
+    # create a code that will open source file of 20 integers
+    with open("number.txt", "r") as file:
 
 
 #create a code that will open source file of 20 integers
