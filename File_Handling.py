@@ -1,3 +1,5 @@
+import pyttsx3
+text_speech = pyttsx3.init()
 #Create a text file named number.txt
     #Add 20 integers in the text file
 
@@ -11,10 +13,14 @@ with open("number.txt", "r") as numbers:
         with open("even.txt", "w") as even:
             for num in even_integers:
                 even.write(f"{num}\n")
-        print("Even integers have been sorted out to the created file (even.txt)")
-
+        speak_even_integers=("Even integers have been sorted out to the created file (even.txt)")
+        text_speech.say(speak_even_integers)
+        text_speech.runAndWait()
+        print(speak_even_integers)
     except ValueError:
-        print("An Invalid Integer found in number.txt")
+        Invalid=("An Invalid Integer found in number.txt")
+        text_speech.say(Invalid)
+        text_speech.runAndWait()
 
 
 
@@ -29,7 +35,12 @@ with open("number.txt", "r") as numbers:
         with open("odd.txt", "w") as odd:
             for num in odd_integers:
                 odd.write(f"{num}\n")
-        print("Odd integers have been sorted out to the created file")
+        speak_odd_integers=("Odd integers have been sorted out to the created file (odd.txt)")
+        text_speech.say(speak_odd_integers)
+        text_speech.runAndWait()
+        print(speak_odd_integers)
 
     except ValueError:
-        print("An Invalid Integer found in number.txt")
+        invalid=("An Invalid Integer found in number.txt")
+        text_speech.say(invalid)
+        text_speech.runAndWait()
