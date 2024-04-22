@@ -1,5 +1,5 @@
 
-
+#For square of the even integers
 #create a function
 def source_file(file_name):
     # create a code that will open source file of 20 integers
@@ -22,6 +22,7 @@ def source_file(file_name):
 #store the output in double.txt
 source_file("Double.txt")
 
+#For cube of the odd integers
 
 #create a code that will create a file for the cube of the odd integers in triple.txt
 def source_file_2(file_name_2):
