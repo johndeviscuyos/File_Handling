@@ -15,7 +15,7 @@ def source_file(file_name):
             with open("Double.txt", "w") as even:
                 for num in even_squared:
                     even.write(f"{num}\n")
-            print("Even integers have been sorted out to the created file (even.txt)")
+            print("Even integers have been sorted out to the created file (Double.txt)")
 
         except ValueError:
             print("An Invalid Integer found in number.txt")
