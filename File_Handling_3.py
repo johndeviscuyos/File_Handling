@@ -14,4 +14,4 @@ def creating_file(file_name):
             if add_lines.lower() != 'y':
                 break
 #call the function to put it in a file
-
+creating_file('mylife.txt')
