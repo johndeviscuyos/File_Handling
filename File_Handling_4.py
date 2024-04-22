@@ -9,10 +9,18 @@ def source_file(file_name):
             integers = [int(line.strip()) for line in file]
 
             even_integers = [num for num in integers if num % 2 == 0]
+            # create a code that will Find the square of the even integers in the source file
+            even_squared = [num * num for num in even_integers]
 
-            print(even_integers)
+            with open("Double.txt", "w") as even:
+                for num in even_squared:
+                    even.write(f"{num}\n")
+            print("Even integers have been sorted out to the created file (even.txt)")
+
         except ValueError:
-            print("Invalid")
+            print("An Invalid Integer found in number.txt")
+
+
 
 
 source_file("Double.txt")
