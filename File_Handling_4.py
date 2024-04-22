@@ -4,6 +4,7 @@
 def source_file(file_name):
     # create a code that will open source file of 20 integers
     with open("number.txt", "r") as file:
+        #source file used was the number.txt that is used in File_Handling
 
 
 #create a code that will open source file of 20 integers
