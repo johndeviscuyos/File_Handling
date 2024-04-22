@@ -35,11 +35,14 @@ def source_file_2(file_name_2):
             # create a code that will find the cube of the integers
             odd_cube = [num**3 for num in odd_integers]
 
-            print(odd_cube)
+            with open("Triplet.txt", "w") as odd:
+                for num in odd_cube:
+                    odd.write(f"{num}\n")
+            print("Odd integers have been sorted out to the created file (Triplet.txt)")
+
         except ValueError:
-            print("An Invalid")
+            print("An Integer found in number.txt")
 
 
 source_file_2("Triple.txt")
-#create a code that will find the cube of the integers
 #store the output in triple.txt
