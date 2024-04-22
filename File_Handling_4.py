@@ -1,6 +1,11 @@
 
 
 #create a function
+def source_file(file_name):
+
+source_file("Double.txt")
+
+
 #create a code that will open source file of 20 integers
 #create a code that will create a file name double.txt
 #create a code that will Find the square of the even integers in the source file
