@@ -26,8 +26,15 @@ source_file("Double.txt")
 
 #create a code that will create a file for the cube of the odd integers in triple.txt
 def source_file_2(file_name_2):
+    #opening the source file
     with open("number.txt", "r") as file_2:
-
+        #for identifying the even integers
+        try:
+            integers = [int(line.strip()) for line in file_2]
+            odd_integers = [num for num in integers if num % 2 != 0]
+            print(odd_integers)
+        except ValueError:
+            print("An Invalid")
 
 source_file_2("Triple.txt")
 #create a code that will find the cube of the integers
