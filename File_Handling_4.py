@@ -32,9 +32,13 @@ def source_file_2(file_name_2):
         try:
             integers = [int(line.strip()) for line in file_2]
             odd_integers = [num for num in integers if num % 2 != 0]
-            print(odd_integers)
+            # create a code that will find the cube of the integers
+            odd_cube = [num**3 for num in odd_integers]
+
+            print(odd_cube)
         except ValueError:
             print("An Invalid")
+
 
 source_file_2("Triple.txt")
 #create a code that will find the cube of the integers
