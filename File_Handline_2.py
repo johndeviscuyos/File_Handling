@@ -1,4 +1,7 @@
+import pyttsx3
+text_speech = pyttsx3.init()
 #Create a txt file with lists of 20 students with GWA
+
 
 
 #Create a code that will open the txt file
@@ -16,3 +19,7 @@ sorted_students = sorted(students.items(), key=lambda x: x[1], reverse=True)
 #Print the output
 for name, gwa in sorted_students:
     print(f"{name} - GWA: {gwa}")
+
+    text_speech.say(f"{name} has a GWA of {gwa}")
+    text_speech.runAndWait()
+
